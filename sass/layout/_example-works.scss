@@ -56,7 +56,7 @@
   padding: 20px 24px;
   border: 1px solid var(--blok-background-color);
   border-top: none;
-  flex-grow: 1;
+  flex-shrink: 1;
 }
 .examples-title {
   color: var(--primary-text-color);
