@@ -1,0 +1,35 @@
+/* Наші роботи чим ми займаємося */
+.projects {
+  padding-top: 0;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__text {
+    padding: 27px 0;
+    position: absolute;
+    width: 100%;
+    background-color: rgba(47, 48, 58, 0.8);
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.17;
+    text-transform: uppercase;
+
+    color: var(--white-text-color);
+    bottom: 0;
+    left: 0;
+  }
+
+  &__item + &__item {
+    margin-left: 30px;
+  }
+}

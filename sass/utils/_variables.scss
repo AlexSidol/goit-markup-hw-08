@@ -1,0 +1,27 @@
+
+/* Основний колір фону та тексту */
+:root {
+    --primary-text-color: #212121;
+    --white-text-color: #ffffff;
+    --title-text-color: #757575;
+    --accent-color: #2196f3;
+    --background-color: #f5f5f5;
+    --section-background-color: #f5f4fa;
+    --blok-background-color: #eeeeee;
+    --footer-color: #2f303a;
+    --border-line: #ececec;
+    --fill-icon: #afb1b8;
+    --animation-act-transform: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    --animation-act-color: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    --animation-act-background: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    --animation-border-color: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    --animation-shadow: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.page {
+    background-color: var(--white-text-color);
+    color: var(--primary-text-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}

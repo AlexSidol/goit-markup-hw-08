@@ -1,0 +1,25 @@
+/* Хедер */
+
+.header {
+    border-bottom: 1px solid var(--border-line);
+}
+
+
+/* Хедер синя полоска current page  */
+
+.current-page {
+    display: inline-block;
+    position: relative;
+}
+
+.current-page::after {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    content: '';
+    background-color: var(--accent-color);
+}

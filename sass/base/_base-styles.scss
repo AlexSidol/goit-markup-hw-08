@@ -1,0 +1,48 @@
+// 480px mobile
+// 768px tablet
+// 1200px desktop
+
+.container {
+  max-width: 480px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
+}
+
+/* h2  */
+
+.section-title {
+  margin-bottom: 30px;
+  font-weight: 700;
+
+  line-height: 1.17;
+  text-align: center;
+  font-size: 28px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.title-text {
+  color: var(--title-text-color);
+}

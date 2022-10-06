@@ -1,0 +1,39 @@
+.main-button {
+  display: inline-flex;
+  padding: 10px 24px;
+  margin-top: 30px;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--white-text-color);
+  background-color: var(--accent-color);
+
+  @media screen and (min-width: 1200px) {
+    padding: 10px 32px;
+  }
+}
+
+/* Кнопки в портфоліо фільтр робіт*/
+
+.second-button {
+  background-color: var(--section-background-color);
+  display: inline-block;
+  padding: 6px 22px;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  border: none;
+  transition: var(--animation-act-background), var(--animation-act-color), var(--animation-shadow);
+}
+
+.second-button:focus,
+.second-button:hover {
+  color: var(--white-text-color);
+  background-color: var(--accent-color);
+}

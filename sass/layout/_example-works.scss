@@ -1,0 +1,71 @@
+/* Приклади робіт */
+
+.example {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.overlay-block-in {
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
+}
+
+// Оверлей в картках сторінки Портфоліо
+
+.exemple-overlay-block {
+  position: relative;
+  overflow: hidden;
+}
+
+.exemple-overlay {
+  position: absolute;
+  transform: translateY(101%);
+  padding: 63px 24px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.exemple-overlay-text {
+  width: 322px;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  color: var(--white-text-color);
+}
+
+.example-link:hover .exemple-overlay,
+.example-link:focus .exemple-overlay {
+  transform: translateY(0);
+}
+
+.example-project {
+  padding: 20px 24px;
+  border: 1px solid var(--blok-background-color);
+  border-top: none;
+}
+.examples-title {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.section-examples .title-text {
+  font-size: 16px;
+  line-height: 1.87;
+}

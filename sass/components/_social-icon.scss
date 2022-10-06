@@ -1,0 +1,28 @@
+// Icons team-section
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  color: var(--fill-icon);
+  border-radius: 50%;
+  transition: var(--animation-act-color), var(--animation-act-background);
+}
+
+.social__link:hover,
+.social__link:focus {
+  color: var(--white-text-color);
+  background-color: var(--accent-color);
+}
+
+.social__icon {
+  fill: currentColor;
+}

@@ -1,0 +1,93 @@
+/* Хедер Посилання на інші сторінки сайту емейл та телефон */
+/* Общий родитель */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+}
+
+.site-nav .contact {
+  color: var(--title-text-color);
+}
+
+.site-nav-unit {
+  padding-left: 0;
+  margin-left: 93px;
+  gap: 50px;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.site-nav-panel {
+  display: flex;
+  margin-left: auto;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-direction: column;
+    gap: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    gap: 50px;
+  }
+}
+
+.site-nav-unit .item {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.site-nav .link {
+  display: flex;
+  margin-left: auto;
+
+  color: var(--primary-text-color);
+}
+
+.contact {
+  text-align: center;
+}
+
+.transition-act {
+  transition: var(--animation-act-color);
+}
+
+.site-nav .contact {
+  display: flex;
+  align-items: center;
+  color: var(--title-text-color);
+}
+
+.site-nav .item:focus,
+.site-nav .contact:focus,
+.site-nav .contact:hover,
+.site-nav .link:hover,
+.site-nav .link:focus,
+.site-nav .link.current,
+.address-footer:focus,
+.address-footer:hover,
+.mail-footer:focus,
+.mail-footer:hover,
+.tel-footer:focus,
+.tel-footer:hover {
+  color: var(--accent-color);
+}
+
+.contact-link {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.site-nav .link,
+.site-nav .contact {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
