@@ -177,6 +177,13 @@ img {
 
 .menu-container {
   position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   top: 0;
   left: 0;
   width: 100vw;
@@ -216,7 +223,7 @@ img {
   gap: 32px;
   padding: 0;
   margin: 0;
-  margin-bottom: 302px;
+  margin-bottom: auto;
 }
 .mobile__link {
   display: block;
@@ -411,13 +418,24 @@ mobile__link .mobile-menu {
 
 .hero {
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 116px;
+  padding-bottom: 118px;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 118px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .main-headline {
   color: var(--white-text-color);
-  min-width: 360px;
+  max-width: 360px;
   font-size: 26px;
   line-height: 1.62;
   font-weight: 900;
@@ -437,7 +455,6 @@ mobile__link .mobile-menu {
 
 .overlay {
   max-width: 1600px;
-  min-height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-position: center;
@@ -482,6 +499,11 @@ mobile__link .mobile-menu {
 }
 
 /* Переваги */
+@media screen and (min-width: 768px) {
+  .advantage__item {
+    width: 354px;
+  }
+}
 .advantage__text {
   line-height: 1.71;
   color: var(--title-text-color);
@@ -492,12 +514,16 @@ mobile__link .mobile-menu {
   display: flex;
   gap: 30px;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .advantage__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .advantage__list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -512,7 +538,6 @@ mobile__link .mobile-menu {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 450px;
   height: 120px;
   background-color: var(--section-background-color);
   border-radius: 4px;
@@ -520,24 +545,17 @@ mobile__link .mobile-menu {
   -webkit-transition: var(--animation-act-color), var(--animation-act-background);
   transition: var(--animation-act-color), var(--animation-act-background);
 }
-@media screen and (min-width: 768px) {
-  .advantage__icon-block {
-    width: 354px;
-    height: 224px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .advantage__icon-block {
-    width: 270px;
-    height: 120px;
-  }
-}
 .advantage__title {
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+}
+@media screen and (max-width: 767px) {
+  .advantage__title {
+    text-align: center;
+  }
 }
 
 /* Наші роботи чим ми займаємося */
@@ -587,10 +605,6 @@ mobile__link .mobile-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
@@ -1325,11 +1339,16 @@ mobile__link .mobile-menu {
   }
 }
 .agreement__link {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .agreement__link {
+    font-size: 14px;
+  }
 }
 .agreement__icon--check {
   opacity: 0;

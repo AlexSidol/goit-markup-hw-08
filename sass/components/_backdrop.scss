@@ -165,10 +165,13 @@
   }
 
   &__link {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.71;
     text-decoration-line: underline;
     color: var(--accent-color);
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+    }
   }
   &__icon--check {
     opacity: 0;
