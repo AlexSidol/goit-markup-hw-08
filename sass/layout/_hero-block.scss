@@ -13,7 +13,6 @@
 
 .main-headline {
   color: var(--white-text-color);
-  max-width: 360px;
   font-size: 26px;
   line-height: 1.62;
   font-weight: 900;
@@ -22,6 +21,10 @@
   text-transform: uppercase;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (max-width: 767px) {
+    max-width: 360px;
+  }
 
   @media screen and (min-width: 768px) {
     max-width: 696px;
